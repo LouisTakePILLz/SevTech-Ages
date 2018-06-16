@@ -33,6 +33,12 @@ zenClass Unifier {
 		unify(oreDictEntry, preferredItem, null);
 	}
 
+	// TODO: Validate if this works with ZS (having 2 funcs with 2 params - even if they are different types)
+	function unify(oreDictEntry as IOreDictEntry, liquid as ILiquidStack) {
+		var preferredItem as IItemStack = getPreferredItem(oreDictEntry);
+		unify(oreDictEntry, preferredItem, liquid);
+	}
+
 	function unify(oreDictEntry as IOreDictEntry, preferredItem as IItemStack) {
 		unify(oreDictEntry, preferredItem, null);
 	}
