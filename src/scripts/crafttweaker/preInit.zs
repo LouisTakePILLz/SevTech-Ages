@@ -15,44 +15,6 @@ import mods.sevtweaks.stager.Stage;
 var PACK_VERSION as string = "3.1.0"; // Keep below 11 characters
 
 // ==================================
-// Stage Naming
-static stageNames as string[string] = {
-	// Core Stages
-	tutorial: "tutorial",
-	zero: "zero",
-	one: "one",
-	two: "two",
-	three: "three",
-	four: "four",
-	five: "five",
-	creative: "creative",
-
-	// Mob Stages
-	zeroMob: "zero_mob",
-	oneMob: "one_mob",
-	twoMob: "two_mob",
-	threeMob: "three_mob",
-	fourMob: "four_mob",
-	fiveMob: "five_mob",
-
-	// Unique Stages
-	baykok: "baykok",
-	mapping: "mapping",
-
-	// Unique stage intended to disable existing items/etc
-	disabled: "disabled",
-
-	// Stage for unused creative items
-	creativeUnused: "creative_unused"
-};
-
-// ==================================
-// Stage Creation
-for key, stage in stageNames {
-	Stager.initStage(stage);
-}
-
-// ==================================
 // Logging
 var packVersionForLogo as string = "v" ~ PACK_VERSION;
 while packVersionForLogo.length < 12 {
@@ -95,3 +57,45 @@ print("ddhdhhyyssssssssssssssssssssssssssyys+-");
 print("hddhhhhhhhhhhhhyyyyyhhyyyyyssyhdms-`");
 print("hhhhhhhhddddhhhdhhhhhhyhhhdddddhhdy/`");
 print("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhdy-");
+
+// ==================================
+// Stage Naming
+static stageNames as string[string] = {
+	// Core Stages
+	tutorial: "tutorial",
+	zero: "zero",
+	one: "one",
+	two: "two",
+	three: "three",
+	four: "four",
+	five: "five",
+	creative: "creative",
+
+	// Mob Stages
+	zeroMob: "zero_mob",
+	oneMob: "one_mob",
+	twoMob: "two_mob",
+	threeMob: "three_mob",
+	fourMob: "four_mob",
+	fiveMob: "five_mob",
+
+	// Unique Stages
+	baykok: "baykok",
+	mapping: "mapping",
+
+	// Unique stage intended to disable existing items/etc
+	disabled: "disabled",
+
+	// Stage for unused creative items
+	creativeUnused: "creative_unused"
+};
+
+// ==================================
+// Stage Creation
+for key, stage in stageNames {
+	Stager.initStage(stage);
+}
+
+// ==================================
+// Unifier Initialization
+global unifier as scripts.crafttweaker.classes.unify.unifier.Unifier = scripts.crafttweaker.classes.unify.unifier.Unifier();
