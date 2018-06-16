@@ -28,6 +28,14 @@ zenClass Unifier {
 	zenConstructor() {
 	}
 
+	function clearOreDict(oreDictEntry as IOreDictEntry) {
+		unify(oreDictEntry, null, null);
+	}
+
+	function clearOreDict(oreDictEntry as IOreDictEntry, liquid as ILiquidStack) {
+		unify(oreDictEntry, null, liquid);
+	}
+
 	function unify(oreDictEntry as IOreDictEntry) {
 		var preferredItem as IItemStack = getPreferredItem(oreDictEntry);
 		unify(oreDictEntry, preferredItem, null);
