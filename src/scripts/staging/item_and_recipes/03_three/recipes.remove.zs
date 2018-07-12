@@ -15,6 +15,12 @@ var removeItems as IItemStack[] = [
 	<oeintegration:excavatemodifier>,
 	<prospectors:prospector_med>,
 
+	//Alternating Flux
+	<alternatingflux:connector:0>,
+	<alternatingflux:connector:1>,
+	<alternatingflux:wirecoil:0>,
+	<alternatingflux:material:0>,
+
 	//Minecraft
 	<minecraft:activator_rail>,
 	<minecraft:detector_rail>,

@@ -249,13 +249,14 @@ function handlePreferredMetalItem(metalName as string, metalPartName as string, 
 	}
 
 	//Plates should also be used in place of ingots for wire
-	if (metalName == "copper" | metalName == "electrum" | metalName == "aluminum" | metalName == "steel") {
+	if (metalName == "copper" | metalName == "electrum" | metalName == "aluminum" | metalName == "steel" | metalName == "constantan") {
 		if (metalPartName == "plate") {
 			var wires as IItemStack[string] = {
 				aluminum: <immersiveengineering:material:22>,
 				copper: <immersiveengineering:material:20>,
 				electrum: <immersiveengineering:material:21>,
-				steel: <immersiveengineering:material:23>
+				steel: <immersiveengineering:material:23>,
+				constantan: <alternatingflux:material:0>
 			};
 
 			mods.immersiveengineering.MetalPress.addRecipe(

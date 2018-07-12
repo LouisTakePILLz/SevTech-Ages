@@ -41,6 +41,29 @@ var shapedRecipes as IIngredient[][][][IItemStack] = {
 		[[null, <minecraft:redstone>, <ore:blockGlass>], [null, <minecraft:dye:4>, <minecraft:redstone>], [<minecraft:dye:4>, null, null]]
 	],
 
+	//Alternating Flux
+	<alternatingflux:wirecoil:0 * 4> : [
+		[
+			[<immersiveengineering:material:18>, <alternatingflux:material:0>, null],
+			[<alternatingflux:material:0>, <ore:stickWood>, <alternatingflux:material:0>],
+			[null, <alternatingflux:material:0>, <immersiveengineering:material:18>]
+		]
+	],
+	<alternatingflux:connector:0> : [
+		[
+			[null, metals.constantan.ingot, null],
+			[<immersiveengineering:stone_decoration:8>, metals.constantan.ingot, <immersiveengineering:stone_decoration:8>],
+			[<immersiveengineering:stone_decoration:8>, metals.constantan.ingot, <immersiveengineering:stone_decoration:8>],
+		]
+	],
+	<alternatingflux:connector:1> : [
+		[
+			[<immersiveengineering:connector:4>, null, <alternatingflux:connector:0>],
+			[metals.constantan.ingot, <immersiveengineering:metal_decoration:0>, metals.constantan.ingot],
+			[metals.iron.ingot, metals.iron.ingot, metals.iron.ingot]
+		]
+	],
+
 	//Ore Excavator Modifer Item
 	<oeintegration:excavatemodifier> * 25: [
 		[

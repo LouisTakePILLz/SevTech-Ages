@@ -6,6 +6,23 @@ var removeItems as IItemStack[] = [
 	<betterbuilderswands:wandunbreakable>,
 	<prospectors:prospector_low>,
 
+	//Immersive Cables
+	<immersivecables:coil_block:0>,
+	<immersivecables:coil_block:1>,
+	<immersivecables:coil_block:2>,
+	<immersivecables:coil_block:3>,
+	<immersivecables:wire_coil:0>,
+	<immersivecables:wire_coil:1>,
+	<immersivecables:wire_coil:2>,
+	<immersivecables:wire_coil:3>,
+	<immersivecables:transformer_fluix:0>,
+	<immersivecables:transformer_fluix:1>,
+	<immersivecables:relay_fluix:0>,
+	<immersivecables:relay_fluix:1>,
+	<immersivecables:connector_quartz:0>,
+	<immersivecables:transformer_refined:0>,
+	<immersivecables:relay_refined:0>,
+
 	// Minecraft
 	<minecraft:diamond_block>,
 	<minecraft:emerald_block>,

@@ -32,6 +32,58 @@ var shapedRecipes as IIngredient[][][][IItemStack] = {
 		[[null, <minecraft:diamond>, <ore:blockGlass>], [null, <minecraft:blaze_rod>, <minecraft:diamond>], [<minecraft:blaze_rod>, null, null]]
 	],
 
+	//Immersive Cables
+	<immersivecables:wire_coil:0 * 4> : [
+		[
+			[null, <appliedenergistics2:material:12>, null],
+			[<immersiveengineering:material:22>, <ore:stickWood>, <immersiveengineering:material:22>],
+			[null, <appliedenergistics2:material:12>, null]
+		]
+	],
+	<immersivecables:wire_coil:1 * 4> : [
+		[
+			[null, <appliedenergistics2:material:7>, null],
+			[<immersiveengineering:material:23>, <ore:stickWood>, <immersiveengineering:material:23>],
+			[null, <appliedenergistics2:material:7>, null]
+		]
+	],
+	<immersivecables:wire_coil:2 * 4> : [
+		[
+			[null, <appliedenergistics2:material:11>, null],
+			[<immersiveengineering:material:20>, <ore:stickWood>, <immersiveengineering:material:20>],
+			[null, <appliedenergistics2:material:11>, null]
+		]
+	],
+	<immersivecables:wire_coil:3 * 4> : [
+		[
+			[null, <refinedstorage:quartz_enriched_iron>, null],
+			[<immersiveengineering:material:22>, <ore:stickWood>, <immersiveengineering:material:22>],
+			[null, <refinedstorage:quartz_enriched_iron>, null]
+		]
+	],
+	<immersivecables:coil_block:0> : [
+		[
+			[<immersivecables:wire_coil:0>, <immersivecables:wire_coil:0>, <immersivecables:wire_coil:0>],
+			[<immersivecables:wire_coil:0>, <ore:ingotIron>, <immersivecables:wire_coil:0>],
+			[<immersivecables:wire_coil:0>, <immersivecables:wire_coil:0>, <immersivecables:wire_coil:0>]
+		]
+	],
+	<immersivecables:coil_block:1> : [
+		[
+			[<immersivecables:wire_coil:1>, <immersivecables:wire_coil:1>, <immersivecables:wire_coil:1>],
+			[<immersivecables:wire_coil:1>, <ore:ingotIron>, <immersivecables:wire_coil:1>],
+			[<immersivecables:wire_coil:1>, <immersivecables:wire_coil:1>, <immersivecables:wire_coil:1>]
+		]
+	],
+	<immersivecables:coil_block:2> : [
+		[
+			[<immersivecables:wire_coil:2>, <immersivecables:wire_coil:2>, <immersivecables:wire_coil:2>],
+			[<immersivecables:wire_coil:2>, <ore:ingotIron>, <immersivecables:wire_coil:2>],
+			[<immersivecables:wire_coil:2>, <immersivecables:wire_coil:2>, <immersivecables:wire_coil:2>]
+		]
+
+
+
 	// Primal Core
 	<primal:diamond_workblade>: [
 		[
